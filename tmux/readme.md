@@ -5,6 +5,9 @@ Inside of TMUX:
 
     PREFIX : source-file ~/.tmux.conf
 
+##Scrolling
+    PREFIX [
+    type q to quit
 
 ##Panes
 
