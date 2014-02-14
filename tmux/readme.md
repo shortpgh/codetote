@@ -3,5 +3,5 @@ TMUX Commands:
 #Reload Config after Changes
 Inside of TMUX:
 
-prefix then :source-file ~/.tmux.conf
+    PREFIX : source-file ~/.tmux.conf
 
