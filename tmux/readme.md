@@ -24,6 +24,9 @@ Inside of TMUX:
     PREFIX { (Move the current pane left)
     PREFIX } (Move the current pane right)
 
+### Zoom
+    PREFIX z
+
 ###Resizing
     PREFIX : resize-pane (By default it resizes the current pane down)
     PREFIX : resize-pane -U (Resizes the current pane upward)
