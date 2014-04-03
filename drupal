@@ -1,0 +1,23 @@
+Notes on DRUPAL
+
+#Get Errors from DB
+
+  SELECT * FROM watchdog ORDER BY wid DESC LIMIT 20;
+  
+#Check Modules in DB
+
+
+  SELECT name,status FROM system WHERE type='module';
+
+OR
+
+  SELECT name,status FROM system WHERE name='module_name';
+  
+
+#Disable Module
+
+  UPDATE system SET status='0' WHERE name='module_name';
+  
+#Enable Module
+
+  UPDATE system SET status='1' WHERE name='module_name';
