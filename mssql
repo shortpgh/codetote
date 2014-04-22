@@ -1,0 +1,17 @@
+# Move Databases
+
+Run the following statement.
+  ALTER DATABASE database_name SET OFFLINE;
+
+Move the file or files to the new location.
+
+For each file moved, run the following statement.
+  ALTER DATABASE database_name MODIFY FILE ( NAME = logical_name, FILENAME = 'new_path\os_file_name' );
+
+Run the following statement.
+  ALTER DATABASE database_name SET ONLINE;
+
+Verify the file change by running the following query.
+  SELECT name, physical_name AS CurrentLocation, state_desc
+  FROM sys.master_files
+  WHERE database_id = DB_ID(N'<database_name>');
