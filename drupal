@@ -21,3 +21,9 @@ OR
 #Enable Module
 
   UPDATE system SET status='1' WHERE name='module_name';
+
+#Reinstall a Module
+
+  DELETE FROM system WHERE type='module';
+  
+Then enable the module. The .install file will run.
