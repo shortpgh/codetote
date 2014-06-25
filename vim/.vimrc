@@ -15,13 +15,17 @@ colorscheme desert
 syntax enable
 filetype plugin on
 " i like fold based on indents
-set foldmethod=indent
+"set foldmethod=indent
+"i started to find that code folding makes me do more work to see my code.
+"disabling for a bit to see how my life works w/o it.
+set nofoldenable
 " i like the whole line to be highlighted
 set cursorline
 " smart case searching
 set smartcase
 
 "i want standard soft tabs everywhere.
+set expandtab
 set softtabstop=4
 "i want << and >> to match the softtab.
 set shiftwidth=4
@@ -38,10 +42,10 @@ set textwidth=80
 set mouse=a
 
 "i want tab completion
-set wildmenu
+"set wildmenu
 
 " i want to see more commands at the bottom of the window
-set cmdheight=2
+set cmdheight=1
 
 " paste toggle for indentless pasting.
 " http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste

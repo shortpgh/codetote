@@ -4,5 +4,5 @@ if ! exists('b:current_compiler')
 endif 
 
 "make on save so we find syntax errors.
-au BufWritePost *.js make
+"au BufWritePost *.js make
 
