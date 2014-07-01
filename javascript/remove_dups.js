@@ -4,7 +4,7 @@ Takes an array and recusrively removes any duplicates.
 This uses all built in Javascript methods. No external libraries needed.
 **/
 
-function remove_dupes(data) {
+function remove_dups(data) {
     var ret = [];
     if (data.length <= 0) { return [] };
     var cur = data.pop();
