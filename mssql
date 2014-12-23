@@ -8,6 +8,9 @@ Run to get the current database file names and locations.
 Run the following statement.
   ALTER DATABASE database_name SET OFFLINE;
 
+If that doesn't work, you can force it doing this:
+  ALTER DATABASE database_name SET OFFLINE WITH ROLLBACK IMMEDIATE
+
 Move the file or files to the new location.
 
 For each file moved, run the following statement.
