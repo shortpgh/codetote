@@ -57,6 +57,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+alias ls='ls -la'
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -73,3 +75,15 @@ export EDITOR='vim'
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# plan9port
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
+# go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/plan9-setup/bin
+
+#DBSteward
+export PATH=$PATH:~/bin/DBSteward/bin
