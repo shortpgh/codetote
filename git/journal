@@ -42,3 +42,11 @@ change the url of a remote
 pull and rebase changes from origin
 
     git pull --rebase origin master
+
+list tags
+
+    git tag
+    
+set version tag
+
+    git tag -a v1.4 -m 'my version 1.4'
