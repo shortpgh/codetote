@@ -58,6 +58,10 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:~/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 alias ls='ls -la'
+alias vup='vagrant up'
+alias vhalt='vagrant halt'
+alias gpush='git push origin master'
+alias gpull='git pull origin master'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
