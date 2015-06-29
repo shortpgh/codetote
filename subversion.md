@@ -1,7 +1,7 @@
 == Windows ==
 === Remove all non-committed code on Windows ===
 
-powershell -Command "&{(svn status --no-ignore) -match '^[\?i]' -replace '^.\s+' | rm -recurse -force}
+powershell -Command "&{(svn status --no-ignore) -match '^[\?i]' -replace '^.\s+' | rm -recurse -force}"
 
 === Remove all deleted files ===
 
