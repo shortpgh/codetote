@@ -5,6 +5,12 @@ then
     exit $E_NOTROOT
 fi  
 
+# runs cleanup on exit
+function cleanup {
+  # do something if necessary before exit.
+}
+trap cleanup EXIT
+
 #checks for arguments
 #fill in these vars
 script_parameters="-a -h -m -z"
